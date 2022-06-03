@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "757575220829",
+    "project_id": "badge-system-a4af2",
+    "storage_bucket": "badge-system-a4af2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757575220829:android:0a6b6fcb69c3b5378b57b4",
+        "android_client_info": {
+          "package_name": "com.example.badge_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757575220829-j81b4iliosmgjefedoulq5c9r7e3i5dl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZi39hWi2PXKckZokSMDBlV5ztwIeZVVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757575220829-j81b4iliosmgjefedoulq5c9r7e3i5dl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
