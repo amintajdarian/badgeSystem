@@ -8,7 +8,7 @@ class CharacterComicsModel {
   final String name;
 
   @HiveField(2)
-  final int badge;
+  final String gender;
 
-  CharacterComicsModel({required this.name, required this.badge});
+  CharacterComicsModel({required this.name, required this.gender});
 }

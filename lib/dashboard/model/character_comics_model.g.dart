@@ -18,7 +18,7 @@ class CharacterComicsModelAdapter extends TypeAdapter<CharacterComicsModel> {
     };
     return CharacterComicsModel(
       name: fields[1] as String,
-      badge: fields[2] as int,
+      gender: fields[2] as String,
     );
   }
 
@@ -29,7 +29,7 @@ class CharacterComicsModelAdapter extends TypeAdapter<CharacterComicsModel> {
       ..writeByte(1)
       ..write(obj.name)
       ..writeByte(2)
-      ..write(obj.badge);
+      ..write(obj.gender);
   }
 
   @override

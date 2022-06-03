@@ -27,11 +27,11 @@ class BadgeDatabase {
     var box = await noteBox();
     var data = box.values.toList();
     if (data.isEmpty) {
-      await addCharacter(CharacterComicsModel(badge: 0, name: "Batman/girl"));
-      await addCharacter(CharacterComicsModel(badge: 0, name: "Spiderman/girl"));
-      await addCharacter(CharacterComicsModel(badge: 0, name: "Sherlock"));
-      await addCharacter(CharacterComicsModel(badge: 0, name: "Joker"));
-      await addCharacter(CharacterComicsModel(badge: 0, name: " Ironman/girl"));
+      await addCharacter(CharacterComicsModel(gender: "girl", name: "Batman"));
+      await addCharacter(CharacterComicsModel(gender: "girl", name: "Spiderman"));
+      await addCharacter(CharacterComicsModel(gender: "", name: "Sherlock"));
+      await addCharacter(CharacterComicsModel(gender: "", name: "Joker"));
+      await addCharacter(CharacterComicsModel(gender: "girl", name: " Ironman"));
     }
     return box.values.toList();
   }

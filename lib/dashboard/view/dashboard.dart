@@ -50,16 +50,16 @@ class Dashboard extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return ListTile(
                         onTap: () {
-                          int newBadge = state.characters[index].badge;
+                          String newBadge = state.characters[index].gender == "girl" ? "" : "girl";
                           context.read<BadgeBloc>().add(BageEditedEvent(
                               index: index,
                               character: CharacterComicsModel(
-                                badge: ++newBadge,
+                                gender: newBadge,
                                 name: state.characters[index].name,
                               )));
                         },
                         title: Text(state.characters[index].name),
-                        subtitle: Text(state.characters[index].badge.toString()),
+                        subtitle: Text(state.characters[index].gender.toString()),
                       );
                     },
                   );
